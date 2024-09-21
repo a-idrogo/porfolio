@@ -1,0 +1,149 @@
+/* Estilos */
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+
+footer {
+    text-align: center;
+    padding: 5px 0;
+    background-color: rgba(148, 142, 142, 0.8);
+    position: relative;
+    margin-top: auto;
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(img/fondoit.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+.fotoperfil {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+    border: 5px solid #f0f0f0;
+    object-fit: cover;
+}
+
+/* Estilos para los enlaces destacados */
+.highlighted-link {
+    font-weight: bold;
+    color: #fafafa;
+    text-transform: uppercase;
+    font-size:medium;
+    padding: 1px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+/* Efecto al pasar el ratón por encima */
+.highlighted-link:hover {
+    color: #00e1ff; 
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Diseño Experiencia laboral*/
+
+.experiencia-laboral {
+    margin-top: 20px;
+}
+
+.trabajo {
+    margin-bottom: 30px;
+}
+
+.trabajo h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    color: #007BFF;
+}
+
+.puesto {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #979191;
+    margin-bottom: 5px;
+}
+
+.fecha {
+    font-weight: bold;
+    color: #979191;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 5px;
+}
+
+
+/* Diseño Contacto */
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-links a {
+    margin: 0 20px;
+}
+
+.contact-links img {
+    transition: transform 0.3s;
+}
+
+.contact-links img:hover {
+    transform: scale(1.5);
+}
+
+
+
+/* Estilos para el menú */
+nav {
+    list-style-type: none;
+    padding: 0; 
+}
+
+nav li {
+    display: inline; 
+    margin: 0 15px; 
+}
+
+nav a {
+    text-decoration: none; 
+    color: #007BFF;
+}
+
+nav a:hover {
+    text-decoration: underline; 
+}
