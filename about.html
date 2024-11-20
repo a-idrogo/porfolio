@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Profesional</title>
     <link rel="stylesheet" href="styles.css">
-</head> 
-
+</head>
 <body>
     <div class="background"></div>
 
-    <div class="content">
-        <header>
-            
-                <h1>Portfolio Profesional</h1>
-                <nav>
-                    <li style="display:inline;"><a href="index.html"><img height="20" src="files/home.png" alt="home"></a></li>
-                    <li style="display:inline;"><a href="about.html" class="highlighted-link">Sobre Mí</a></li>
-                    <li style="display:inline;"><a href="services.html" class="highlighted-link">Servicios</a></li>
-                    <li style="display:inline;"><a href="resume.html" class="highlighted-link">Curriculum</a></li>
-                    <li style="display:inline;"><a href="contact.html" class="highlighted-link">Contacto</a></li>
-                </nav>
-           
-        </header>
+    <header class="header">
+        <div class="container">
+            <h1>Portfolio Profesional</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html"><img src="files/home.png" alt="Inicio" class="icon"></a></li>
+                    <li><a href="about.html">Sobre Mí</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="resume.html">Currículum</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-        <h2>Sobre Mí</h2>
-        <hr>
-        <img class="fotoperfil" height="250" img height="300" src="img/photoabout.jpg" alt="Alberto Idrogo">
-        <p>
-            Soy de Venezuela y he vivido en Argentina durante 7 años. Durante este tiempo, he tenido la oportunidad de adaptarme a una nueva cultura y enriquecerme con diversas experiencias. 
-            <br> Mi objetivo es completar la Licenciatura en Gestión de Tecnología de la Información en la UADE, donde espero adquirir las habilidades necesarias para enfrentar los desafíos del mundo tecnológico actual. 
-            <br> Estoy comprometido con mi crecimiento académico y profesional, y aspiro a contribuir de manera significativa en el campo de la tecnología, trabajando en proyectos que mejoren la vida de las personas y optimicen procesos en las empresas. 
-        </p>
-    </div>
+    <main class="content">
+        <section class="about">
+            <h2>Sobre Mí</h2>
+            <div class="about-content">
+                <img class="service-image" src="img/photoabout.jpg" alt="Alberto Idrogo">
+                <p>
+                    Soy de Venezuela y he vivido en Argentina durante 7 años. Durante este tiempo, he tenido la oportunidad de adaptarme a una nueva cultura y enriquecerme con diversas experiencias. 
+                    <br><br> Mi objetivo es completar la Licenciatura en Gestión de Tecnología de la Información en la UADE, donde espero adquirir las habilidades necesarias para enfrentar los desafíos del mundo tecnológico actual. 
+                    <br><br> Estoy comprometido con mi crecimiento académico y profesional, y aspiro a contribuir de manera significativa en el campo de la tecnología, trabajando en proyectos que mejoren la vida de las personas y optimicen procesos en las empresas.
+                </p>
+            </div>
+        </section>
+    </main>
 
-    <footer>
+    <footer class="footer">
         <p>El contenido expresado en esta web corresponde a una actividad académica en UADE, materia Diseño y Desarrollo Web.</p>
     </footer>
 </body>

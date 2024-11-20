@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Profesional</title>
+    <title>Contacto - Portfolio Profesional</title>
     <link rel="stylesheet" href="styles.css">
-</head> 
-
+</head>
 <body>
     <div class="background"></div>
-    <div class="content">
-        <header>
+
+    <header class="header">
+        <div class="container">
             <h1>Portfolio Profesional</h1>
             <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html"><img height="20" src="files/home.png" alt="home"></a></li>
-                    <li><a href="about.html" class="highlighted-link">Sobre Mí</a></li>
-                    <li><a href="services.html" class="highlighted-link">Servicios</a></li>
-                    <li><a href="resume.html" class="highlighted-link">Curriculum</a></li>
-                    <li><a href="contact.html" class="highlighted-link">Contacto</a></li>
+                <ul class="menu">
+                    <li><a href="index.html"><img src="files/home.png" alt="Inicio" class="icon"></a></li>
+                    <li><a href="about.html">Sobre Mí</a></li>
+                    <li><a href="services.html">Servicios</a></li>
+                    <li><a href="resume.html">Currículum</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
                 </ul>
             </nav>
-        </header>
-
-        <h2>Contacto</h2>
-        <hr>
-        <div class="contact-links">
-            <a target="_blank" href="mailto:aidrogo@uade.edu.ar"><img height="100" src="files/email.png" alt="email"></a> 
-            <a target="_blank" href="https://www.linkedin.com/in/alberto-idrogo/"><img height="160" src="files/linkedin.png" alt="linkedin"></a>
-            <a target="_blank" href="https://api.whatsapp.com/send?phone=5491160071479"><img height="100" src="files/whatsapp.png" alt="whatsapp"></a> 
         </div>
-    </div>
+    </header>
 
-    <footer>
+    <main class="content">
+        <section class="contact-section">
+            <h2>Contacto</h2>
+            <hr>
+            <p>Para cualquier consulta, puedes comunicarte conmigo a través de los siguientes medios:</p>
+            <div class="contact-links">
+                <a href="mailto:aidrogo@uade.edu.ar" target="_blank">
+                    <img src="files/email.png" alt="Email" class="contact-icon">
+                </a>
+                <a href="https://www.linkedin.com/in/alberto-idrogo/" target="_blank">
+                    <img src="files/linkedin.png" alt="LinkedIn" class="contact-icon linkedin-icon">
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5491160071479" target="_blank">
+                    <img src="files/whatsapp.png" alt="WhatsApp" class="contact-icon">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
         <p>El contenido expresado en esta web corresponde a una actividad académica en UADE, materia Diseño y Desarrollo Web.</p>
     </footer>
 </body>

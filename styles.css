@@ -1,26 +1,16 @@
-/* Estilos */
-
+/* Estilo General */
 html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
+    font-family: 'Candara', 'Helvetica', sans-serif;
+    color: #f8f8f8;
 }
 
 body {
-    margin: 0;
-    height: 100%;
-    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
-}
-
-
-footer {
-    text-align: center;
-    padding: 5px 0;
-    background-color: rgba(148, 142, 142, 0.8);
-    position: relative;
-    margin-top: auto;
-    display: block;
-    unicode-bidi: isolate;
+    background-color: #000; /* Fallback para la imagen */
 }
 
 .background {
@@ -29,51 +19,123 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(img/fondoit.jpg);
+    background-image: url('img/fondoit.jpg'); /* Cambiar por la imagen correcta */
     background-size: cover;
     background-position: center;
     opacity: 0.9;
     z-index: -1;
 }
 
-.content {
-    position: relative;
-    z-index: 1;
-    color: #f8f8f8;
+.container {
+    max-width: 1200px;
+    margin: auto;
     padding: 20px;
+}
+
+.content {
     text-align: center;
-    flex: 1;
+    padding: 20px;
+    z-index: 1;
 }
 
-.fotoperfil {
-    width: 250px;
-    height: 250px;
-    border-radius: 10%;
-    border: 5px solid #f0f0f0;
-    object-fit: cover;
+/* Encabezado y Navegación */
+.header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+    text-align: center;
+    color: #fff;
 }
 
-/* Estilos para los enlaces destacados */
-.highlighted-link {
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
     font-weight: bold;
-    color: #fafafa;
-    text-transform: uppercase;
-    font-size:medium;
-    padding: 1px;
-    border-bottom: 2px solid transparent;
-    transition: all 0.2s ease;
+    transition: color 0.3s ease;
 }
 
-/* Efecto al pasar el ratón por encima */
-.highlighted-link:hover {
-    color: #00e1ff; 
-    border-bottom: 2px solid #ffffff;
+.menu a:hover {
+    color: #00e1ff;
 }
 
-/* Diseño Experiencia laboral*/
+.icon {
+    width: 20px;
+    height: auto;
+}
 
+/* Sección Sobre Mí */
+.fotoperfil {
+    width: 150px; /* Tamaño pequeño */
+    height: 150px;
+    border-radius: 50%; /* Hace que sea circular */
+    border: 3px solid #f0f0f0;
+    object-fit: cover;
+    margin: 20px auto;
+}
+
+/* Estilos Generales de Texto */
+h1, h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #00e1ff;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 20px auto;
+}
+
+/* Sección Currículum */
+.contact-links, .resume-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 20px 0;
+}
+
+.contact-icon, .resume-icon {
+    height: 100px; /* Tamaño base */
+    width: auto;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+.linkedin-icon {
+    height: 160px; /* Tamaño especial para LinkedIn */
+}
+
+.contact-icon:hover, .resume-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5);
+}
+
+/* Sección Servicios */
+.service-image {
+    height: 300px;
+    width: auto;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Sección Experiencia Laboral */
 .experiencia-laboral {
-    margin-top: 20px;
+    margin: 30px auto;
+    text-align: left;
+    max-width: 800px;
 }
 
 .trabajo {
@@ -81,69 +143,38 @@ footer {
 }
 
 .trabajo h3 {
-    font-size: 1.5em;
-    margin-bottom: 5px;
-    color: #007BFF;
+    font-size: 1.5rem;
+    color: #00e1ff;
 }
 
 .puesto {
     font-style: italic;
-    font-size: 1.1em;
-    color: #979191;
-    margin-bottom: 5px;
+    font-size: 1.2rem;
+    color: #cccccc;
 }
 
 .fecha {
     font-weight: bold;
-    color: #979191;
+    color: #aaaaaa;
     margin-bottom: 10px;
 }
 
 ul {
-    list-style-type: disc;
+    list-style: disc;
     margin-left: 20px;
+    color: #f8f8f8;
 }
 
 ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-
-/* Diseño Contacto */
-.contact-links {
-    margin-top: 20px;
-}
-
-.contact-links a {
-    margin: 0 20px;
-}
-
-.contact-links img {
-    transition: transform 0.3s;
-}
-
-.contact-links img:hover {
-    transform: scale(1.5);
-}
-
-
-
-/* Estilos para el menú */
-nav {
-    list-style-type: none;
-    padding: 0; 
-}
-
-nav li {
-    display: inline; 
-    margin: 0 15px; 
-}
-
-nav a {
-    text-decoration: none; 
-    color: #007BFF;
-}
-
-nav a:hover {
-    text-decoration: underline; 
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ccc;
+    font-size: 0.9rem;
+    margin-top: auto;
 }
